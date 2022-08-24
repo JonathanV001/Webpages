@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.topbar{
+ background-color: rgb(13, 102, 13);
+ overflow: hidden;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.topbar a{
+ text-transform: uppercase;
+ font-size: 17px;
+ text-align: center;
+ padding: 20px; 25px;
+ text-decoration: none;
+ font-family:Georgia, 'Times New Roman', Times, serif;
+ color: white;
+}
+
+img{
+    margin-left: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 125px;
+    height: 65px;
+}
+
+
+
+.topbar a:hover{
+ background-color: rgb(9, 72, 9);
+}
