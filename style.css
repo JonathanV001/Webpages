@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body{
+body, h1, p1{
     margin: 0;
 }
 
@@ -10,9 +10,12 @@ body{
  background-color: rgb(13, 102, 13);
  overflow: hidden;
  display: flex;
+ flex-direction: row;
  align-items: center;
  justify-content: center;
+ height: 10vh;
 }
+
 
 .topbar a{
  text-transform: uppercase;
@@ -24,7 +27,7 @@ body{
  color: white;
 }
 
-img{
+.topbar img{
     margin-left: 20px;
     position: absolute;
     top: 0;
@@ -34,8 +37,111 @@ img{
     height: 65px;
 }
 
+@media screen and (max-width: 900px) {
+    .topbar img {
+        visibility: hidden;
+    }
+}
+
 
 
 .topbar a:hover{
  background-color: rgb(9, 72, 9);
+}
+
+.background{
+    background:url(UNCC-campus.jpeg), rgb(93, 93, 93);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display:flex;
+    flex-direction: column;
+    border-top: 5px white solid;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.background h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    letter-spacing: 10px;
+}
+
+.background p1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    letter-spacing: 7.5px;
+}
+
+.section{
+    height: 80vh;
+    border-top: 5px solid rgb(13, 102, 13);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.align_left{
+    align-items:flex-start;
+}
+
+.section h1{
+    text-align: center;    
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: gold;
+    letter-spacing: 5px;
+}
+
+.section p1{
+color:  white;
+float: right;
+}
+
+.section p2{
+color: rgb(13, 102, 13);
+float: left;
+}
+
+.section p3{
+color: white;
+float: right;
+}
+
+.section img{
+max-width: 50vw;
+max-height: 50vh;
+margin: 50px;
+}
+
+.academics{
+ background: url(Graduation.jpg), rgb(9, 72, 9);
+ background-repeat: no-repeat;
+ background-position: left;
+ background-blend-mode: multiply;
+}
+
+.clubs{
+ background: url(Clubs.jpg), white;
+ background-repeat: no-repeat;
+ background-position: left;
+ background-blend-mode: luminosity;
+}
+
+.sports{
+ background: url(Football.jpg), gold;
+ background-repeat: no-repeat;
+ background-position: left;
+ background-blend-mode: multiply;
 }
