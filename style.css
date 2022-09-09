@@ -1,147 +1,263 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body, h1, p1{
-    margin: 0;
+body,
+h1,
+h2,
+p1,
+p2,
+p3 {
+  margin: 0;
 }
 
-.topbar{
- background-color: rgb(13, 102, 13);
- overflow: hidden;
- display: flex;
- flex-direction: row;
- align-items: center;
- justify-content: center;
- height: 10vh;
+.topbar {
+  background-color: rgb(0, 80, 53);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
 }
 
-
-.topbar a{
- text-transform: uppercase;
- font-size: 17px;
- text-align: center;
- padding: 20px;
- text-decoration: none;
- font-family:Georgia, 'Times New Roman', Times, serif;
- color: white;
+.topbar a {
+  text-transform: uppercase;
+  font-size: 17px;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
 }
 
-.topbar img{
-    margin-left: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px;
-    width: 125px;
-    height: 65px;
+.topbar img {
+  margin-left: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  width: 125px;
+  height: 65px;
 }
 
 @media screen and (max-width: 900px) {
-    .topbar img {
-        visibility: hidden;
-    }
+  .topbar img {
+    visibility: hidden;
+  }
 }
 
-
-
-.topbar a:hover{
- background-color: rgb(9, 72, 9);
+.topbar a:hover {
+  background-color: rgb(0, 54, 36);
 }
 
-.background{
-    background:url(UNCC-campus.jpeg), rgb(93, 93, 93);
-    background-repeat: none;
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: multiply;
-    display:flex;
-    flex-direction: column;
-    border-top: 5px white solid;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
+.background {
+  background: url(UNCC-campus.jpeg), rgb(93, 93, 93);
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  border-top: 5px white solid;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  overflow: hidden;
 }
 
-.background h1{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 100px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-    letter-spacing: 10px;
+.background h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 100px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  letter-spacing: 10px;
 }
 
-.background p1{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-    letter-spacing: 7.5px;
+.background p1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  letter-spacing: 7.5px;
 }
 
-.section{
-    height: 80vh;
-    border-top: 5px solid rgb(13, 102, 13);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    text-align: center;
+.section {
+  overflow: hidden;
+  width: 100%;
+  padding: none;
+  height: 80vh;
 }
 
-.align_left{
-    align-items:flex-start;
+.section_image {
+  margin: none;
+  display: inline-block;
+  height: 80vh;
+  width: 60%;
+  border-top: 5px solid rgb(0, 80, 53);
 }
 
-.section h1{
-    text-align: center;    
-    text-transform: uppercase;
-    font-size: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: gold;
-    letter-spacing: 5px;
+.section_text {
+  float: right;
+  height: 80vh;
+  width: 40%;
+  border-top: 5px solid rgb(0, 80, 53);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
-.section p1{
-color:  white;
-float: right;
+.green_bg {
+  background: rgb(0, 54, 36);
 }
 
-.section p2{
-color: rgb(13, 102, 13);
-float: left;
+.gold_bg {
+  background: rgb(164, 150, 101);
 }
 
-.section p3{
-color: white;
-float: right;
+.align_left {
+  float: right;
 }
 
-.section img{
-max-width: 50vw;
-max-height: 50vh;
-margin: 50px;
+.section_text h1 {
+  text-align: center;
+  font-size: clamp(1rem, 5vw, 4rem);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(164, 150, 101);
+  letter-spacing: 7px;
 }
 
-.academics{
- background: url(Graduation.jpg), rgb(9, 72, 9);
- background-repeat: no-repeat;
- background-position: left;
- background-blend-mode: multiply;
+.section_text h2 {
+  text-align: center;
+  font-size: clamp(1rem, 5vw, 4rem);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(0, 54, 36);
+  letter-spacing: 7px;
 }
 
-.clubs{
- background: url(Clubs.jpg), white;
- background-repeat: no-repeat;
- background-position: left;
- background-blend-mode: luminosity;
+.section_text p1 {
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  letter-spacing: 4px;
 }
 
-.sports{
- background: url(Football.jpg), gold;
- background-repeat: no-repeat;
- background-position: left;
- background-blend-mode: multiply;
+.section_text p2 {
+  padding: 10px;
+  font-size: 17px;
+  color: rgb(13, 102, 13);
+  letter-spacing: 4px;
+}
+
+.section_text p3 {
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  letter-spacing: 4px;
+}
+
+.academics {
+  background: url(Graduation.jpg), rgb(0, 80, 53);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.clubs {
+  background: url(Clubs.jpg), white;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-blend-mode: luminosity;
+  background-size: cover;
+}
+
+.sports {
+  background: url(Football.jpg), rgb(164, 150, 101);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.footer {
+  border-top: 5px solid black;
+  height: 30vh;
+  width: 100%;
+  background: rgb(0, 54, 36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.map {
+  background: url(Map.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 10px solid rgb(164, 150, 101);
+  width: 20%;
+  height: 80%;
+  margin: 0px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map:hover {
+  background: white;
+}
+
+.map:hover h1 {
+  visibility: visible;
+}
+
+.map h1 {
+  visibility: hidden;
+  color: rgb(0, 54, 36);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.fa-brands {
+  padding: none;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  background-color: rgb(0, 54, 36);
+}
+
+.fa-brands:hover {
+  color: rgb(0, 145, 97);
+}
+
+.fa-facebook-f {
+  color: white;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-linkedin-in {
+  color: white;
+}
+
+.fa-youtube {
+  color: white;
 }

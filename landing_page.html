@@ -1,56 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UNCC landing page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      s
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header>
-        <!--Make image disappear when view gets smaller-->
-        <div class="topbar">
-            <img src="uncc_logo.png">
-            <!--Try to link to other items in page-->
-            <a href="#1">Campus locations</a>
-            <a href="#2">Athletics</a>
-            <a href="#3">Academics</a>
-            <a href="#">Clubs & Organizations</a>
-           
-        </div>
+      <!--Make image disappear when view gets smaller-->
+      <div class="topbar">
+        <img src="uncc_logo.png" />
+        <!--Try to link to other items in page-->
+        <a href="#1">Academics</a>
+        <a href="#2">Clubs & Organizations</a>
+        <a href="#3">Athletics</a>
+        <a href="#4">Connect With Us</a>
+      </div>
     </header>
 
     <hero>
-        <div class="background">
-          <h1>unc charlotte</h1>
-          <p1>shape what's next</p1>
-        </div>
+      <div class="background">
+        <h1>unc charlotte</h1>
+        <p1>shape what's next</p1>
+      </div>
     </hero>
 
     <section id="1">
-       <div class="section academics">
-        <h1>Academics</h1>
-        <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quasi iste expedita repudiandae natus ut commodi provident fugit id ducimus voluptates!</p1>
-       </div>
+      <div class="section">
+        <div class="section_image academics"></div>
+        <div class="section_text green_bg">
+          <h1>Academics</h1>
+          <p1
+            >UNC Charlotte is the fastest-growing and third-largest university
+            in North Carolina. As North Carolina’s urban research university,
+            Charlotte is made up of seven colleges offering 171 majors with 77
+            programs leading to bachelor’s degrees, 65 master’s degrees, and 24
+            doctoral degrees. We have a vibrant, exciting campus nestled into
+            one of America’s fastest growing cities, and our future is as bright
+            as our students.</p1
+          >
+        </div>
+      </div>
     </section>
 
     <section id="2">
-        <div class="section clubs align_left">
-         <h1>Clubs</h1>
-         <p2>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quasi iste expedita repudiandae natus ut commodi provident fugit id ducimus voluptates!</p2>
+      <div class="section">
+        <div class="section_image clubs align_left"></div>
+        <div class="section_text">
+          <h1>Clubs</h1>
+          <p2
+            >Choose from more than 350 student organizations in and out of the
+            classroom at UNC Charlotte. There's something for everyone here!</p2
+          >
         </div>
+      </div>
     </section>
 
     <section id="3">
-        <div class="section sports">
-         <h1>Sports</h1>
-         <p3>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quasi iste expedita repudiandae natus ut commodi provident fugit id ducimus voluptates!</p3>
+      <div class="section">
+        <div class="section_image sports"></div>
+        <div class="section_text gold_bg">
+          <h2>Sports</h2>
+          <p3
+            >Niner Nation loves cheering on the 49ers and their 18 NCAA Division
+            I varsity sports. Members of the Football Bowl Subdivision (FBS)
+            Conference USA, the 49ers boast some of the nation’s finest
+            facilities and compete against the NCAA’s top competition.</p3
+          >
         </div>
+      </div>
     </section>
-    
-</body>
+    <footer id="4">
+      <div class="footer">
+        <!--Make map one big clickable button that changes background on hover to say view map-->
+        <a
+          class="map"
+          href="https://facilities.charlotte.edu/our-services/maps/interactive-campus-map"
+          target="_blank"
+        >
+          <h1>View Map</h1>
+        </a>
+        <a href="https://www.facebook.com/UNCCharlotte" target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="https://www.instagram.com/unccharlotte/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://twitter.com/UNCCharlotte" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.linkedin.com/school/unc-charlotte/" target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://www.youtube.com/user/unccharlottevideo" target="_blank"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
 </html>
